@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Sticks Solved</title>
+</head>
+<body>
+<div style="width: fit-content">
+    <p style="width: 100%; text-align: center; margin: 2px 0 2px 0; font-weight: bolder; font-size: 1.1rem">Active
+        Player</p>
+    <table id="main">
+        <tr id="thead">
+            <td id="filler"></td>
+        </tr>
+    </table>
+</div>
+<p>FL = Forced Loss; the opposite player wins with optimal or forced play
+<br>PW = Possible Win; the current player wins with optimal play
+<br>W = Win; the current player wins immediately with optimal play</p>
+</body>
+<script src="tallies.js"></script>
+<script src="main.js"></script>
+</html>
+<style>
+    @font-face {
+        font-family: "NishikiTeki";
+        src: url("NishikiTeki-MVxaJ.ttf") format("truetype");
+    }
+
+    body {
+        font-family: "system-ui", sans-serif;
+        margin: 0;
+        background-color: #0f172a;
+        color: white;
+    }
+
+    .hand_type_hint {
+        font-size: 0.7rem;
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
+    }
+
+    .tal {
+        font-family: "NishikiTeki", serif;
+    }
+
+    td {
+        border: 1px solid #27272a;
+        text-align: center;
+        aspect-ratio: 1;
+        width: 50px;
+        height: 50px;
+    }
+
+    .T_W {
+        background-color: #14532d;
+    }
+
+    .T_FL {
+        background-color: #7f1d1d;
+    }
+
+    .T_PW {
+        background-color: #134e4a;
+    }
+
+    .T_FW {
+        background-color: #3f6212;
+    }
+
+    .highlight {
+        outline: yellow 5px solid;
+    }
+
+    #state_1_1 {
+        background-color: #a2a2ff;
+    }
+
+    .rowcol_label, #filler {
+        background-color: #27272a;
+        /*color: white;*/
+    }
+
+    .rowcol_label > p {
+        margin: 0;
+        padding: 0;
+    }
+
+</style>
